@@ -1,7 +1,7 @@
 <?php 
 $servername="localhost";
-$username="root";
-$password="";
+$sqlusername="admin";
+$sqlpassword="9830";
 $dbname="mail";
 $table="userinfo";
 
@@ -9,7 +9,7 @@ $loginid=$_POST["loginid"];
 $name=$_POST["name"];
 $password=$_POST["password"];
 
-$conn= new mysqli($servername,$username,"",$dbname);
+$conn= new mysqli($servername,$sqlusername,$sqlpassword,$dbname);
 
 if($conn->connect_error) {
 	die("connection failed". $conn->connect_error);
