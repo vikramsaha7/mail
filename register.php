@@ -1,7 +1,7 @@
 <?php 
 $servername="localhost";
-$sqlusername="admin";
-$sqlpassword="9830";
+$sqlusername="root";
+$sqlpassword="";
 $dbname="mail";
 $table="userinfo";
 
